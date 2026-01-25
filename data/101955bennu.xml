@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:ast-bennu.radar.shape-model:data:101955bennu_tab</logical_identifier>
+    <version_id>1.1</version_id>
+    <title>Bennu Radar Shape Model</title>
+    <information_model_version>1.15.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Nolan, M.C., Magri, C., Howell, E.S., Benner, L.A.M., Giorgini, J.D., Hergenrother,
+C.W., Hudson, R.S., Lauretta, D.S., Margot, J.L., Ostro, S.J., and Scheeres, D.J.</author_list>
+      <publication_year>2021</publication_year>
+      <description>This shape model of asteroid (101955) Bennu was created by Nolan et al. (2013) based
+on radar and optical photometric observations made in 1999 and 2005. The model
+resolution is approximately 25m between vertices, with regions of higher resolution
+around the location of a topographical 'boulder' and the symmetric region in the
+opposite hemisphere.                      
+                                                                              
+The model has the format
+                                                                              
+v x1 y1 z1
+v x2 y2 z2
+v x3 y3 z3
+(etc.)       
+                                                                                     
+f i1 j1 k1
+f i2 j2 k2
+(etc.)
+                                                                              
+where the letter 'v' denotes a vertex and the letter 'f' denotes a triangular facet.</description>
+    </Citation_Information>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>1999-09-21Z</start_date_time>
+      <stop_date_time>2005-10-02Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+        <discipline_name>Small Bodies</discipline_name>
+        <facet1>Shape Model</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>None</name>
+      <type>Other Investigation</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>305-m fixed spherical reflecting antenna</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:arecibo.305m</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Arecibo Observatory</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.arecibo</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Arecibo 2380 MHz Radar Receiver</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:arecibo.305m.recv_s</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>305-m fixed spherical reflecting antenna</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:arecibo.305m</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Arecibo Observatory</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.arecibo</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Arecibo Planetary Radar Transmitter</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:arecibo.305m.trans_s</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>70-m steerable parabolic radio telescope</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss14_70m</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Goldstone Complex</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.goldstone</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Goldstone Solar System Radar Receiver</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:goldstone.dss14_70m.recv_x</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>70-m steerable parabolic radio telescope</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss14_70m</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Goldstone Complex</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.goldstone</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Goldstone Solar System Radar Transmitter</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:goldstone.dss14_70m.trans_x</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>University of Arizona Kuiper 1.54m telescope</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:mount_bigelow.1m54</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Steward Observatory</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.mount_bigelow</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>ccd21 camera for the  Kuiper 1.54m telescope</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:mount_bigelow.1m54.ccd21</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>70 cm AZT-8</name>
+        <type>Telescope</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:chuguev.azt8_0m70</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Chuguev (a.k.a. Chuguevskaya, Chuhuiv) Observational Station</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.chuguev</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>SBIG ST-6 UV camera</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:chuguev.azt8_0m70.sbig_st6_uv</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(101955) Bennu</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.101955_bennu</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  </Observation_Area>
+  <Reference_List>
+    <External_Reference>
+      <doi>10.1016/j.icarus.2013.05.028</doi>
+      <reference_text>Nolan, M.C., C. Magri, E.S. Howell, L.A.M. Benner, J.D. Giorgini, and 6 others, Shape
+Model and Surface Properties of the OSIRIS-REx Target Asteroid (101955) Bennu from
+Radar and Lightcurve Observations, Icarus 226, 629-640, 2013.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <File_Area_Observational>
+    <File>
+      <file_name>101955bennu.tab</file_name>
+      <local_identifier>file</local_identifier>
+      <creation_date_time>2020-06-11</creation_date_time>
+      <file_size unit="byte">165640</file_size>
+      <records>4040</records>
+    </File>
+    <Table_Character>
+      <local_identifier>VERTEX_TABLE</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>1348</records>
+      <description>The VERTEX_TABLE is the first part, describing the positions of the vertices of the
+shape model. The floating point numbers x1 y1 z1 are the coordinates of vertex 1, and
+so on (vertices  are implicitly numbered beginning with 1). The origin is the center
+of mass, and the axes are the principal axes of the shape model. This coordinate
+system should not be used to define a cartographic system, as the principal axes are
+not uniquely determined due to the symmetry  of the shape. The z-axis is the spin
+axis or positive pole. The units are kilometers. The linking of vertices into facets
+is provided in the
+FACET_TABLE.</description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>4</fields>
+        <groups>0</groups>
+        <record_length unit="byte">41</record_length>
+        <Field_Character>
+          <name>Vertex Flag</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>UTF8_String</data_type>
+          <field_length unit="byte">1</field_length>
+          <field_format>%-1s</field_format>
+          <description>A 'v', indicating this record contains the coordinates of a vertex</description>
+        </Field_Character>
+        <Field_Character>
+          <name>X Vertex Coordinate</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">11</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.6f</field_format>
+          <unit>km</unit>
+          <description>The x coordinate of the vertex</description>
+        </Field_Character>
+        <Field_Character>
+          <name>Y Vertex Coordinate</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">21</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.6f</field_format>
+          <unit>km</unit>
+          <description>The y coordinate of the vertex</description>
+        </Field_Character>
+        <Field_Character>
+          <name>Z Vertex Coordinate</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">31</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.6f</field_format>
+          <unit>km</unit>
+          <description>The z coordinate of the vertex</description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+    <Table_Character>
+      <local_identifier>FACET_TABLE</local_identifier>
+      <offset unit="byte">55268</offset>
+      <records>2692</records>
+      <description>The FACET_TABLE is the second part of the shape model file providing the linking of
+vertices into facets. The integers i1 j1 k1 are the indices of the 3 vertices that
+form triangular facet 1, and so on.</description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>4</fields>
+        <groups>0</groups>
+        <record_length unit="byte">41</record_length>
+        <Field_Character>
+          <name>Facet Flag</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>UTF8_String</data_type>
+          <field_length unit="byte">1</field_length>
+          <field_format>%-1s</field_format>
+          <description>An 'f', indicating this record contain the indices of three vertices defining a
+single, triangular facet</description>
+        </Field_Character>
+        <Field_Character>
+          <name>Vertex 1</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">16</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>Index of the first vertex (record number in the preceding table)</description>
+        </Field_Character>
+        <Field_Character>
+          <name>Vertex 2</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">26</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>Index of the second vertex</description>
+        </Field_Character>
+        <Field_Character>
+          <name>Vertex 3</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">36</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>Index of the third vertex</description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>
+
