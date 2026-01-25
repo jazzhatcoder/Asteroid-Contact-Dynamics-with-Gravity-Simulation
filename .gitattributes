@@ -1,2 +1,5 @@
 *.tab filter=lfs diff=lfs merge=lfs -text
+vertex/ver256q.tab filter=lfs diff=lfs merge=lfs -text
+vertex/ver512q.tab filter=lfs diff=lfs merge=lfs -text
+asteroid_poly_data.mat filter=lfs diff=lfs merge=lfs -text
 *.mat filter=lfs diff=lfs merge=lfs -text
